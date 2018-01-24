@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="80"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ab_share"
+        android:orderInCategory="90"
+        android:title="@string/action_share"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/icon_pic_list_type"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/action_login"
+                    android:icon="@drawable/icon_pic_list_type"
+                    android:orderInCategory="100"
+                    android:title="登录"
+                    app:showAsAction="ifRoom" />
+
+                <item
+                    android:id="@+id/action_regis"
+                    android:icon="@drawable/icon_pic_list_type"
+                    android:orderInCategory="100"
+                    android:title="注册"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_help"
+                    android:icon="@drawable/ab_share"
+                    android:orderInCategory="100"
+                    android:title="帮助"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_pep"
+                    android:icon="@drawable/ab_share"
+                    android:orderInCategory="100"
+                    android:title="个人"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/action_zx"
+                    android:icon="@drawable/ab_android"
+                    android:orderInCategory="100"
+                    android:title="中心"
+                    app:showAsAction="ifRoom" />
+            </group>
+        </menu>
+    </item>
+
+    <!--showAsAction主要是针对菜单的显示起作用的，它有三个可选项
+always：总是显示在界面上
+never：不显示在界面上，只让出现在右边的三个点中
+ifRoom：如果有位置才显示，不然就出现在右边的三个点中-->
+
+
+    <!--android：orderInCategory="100"
+设置优先级，值越大优先级越低-->
+</menu>

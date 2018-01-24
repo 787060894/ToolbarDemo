@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/OverflowMenuStyle">
+
+    <!--ThemeOverlay.AppCompat.Dark.ActionBar  内部的图标和文字都是白色的,(解决后侧三个小点为黑色不匹配问题)-->
+
+    <!--elevation  阴影-->
+    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"   pop背景是白色的-->
+
+</android.support.v7.widget.Toolbar>
